@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Continental Hotel Reservation Form</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #e5e5e5; }
+    .container { width: 480px; margin: 20px auto; background: #d3d3d3; padding: 15px; }
+    h2 { color: red; text-align: center; font-size: 16px; }
+    table { width: 100%; border-collapse: collapse; border: 2px solid #333; }
+    td { border: 1px solid #333; padding: 6px; background-color: #b0c4de; }
+    td:first-child { font-weight: bold; text-align: right; width: 130px; font-size: 13px; }
+    input[type="text"] { width: 85%; }
+    .small { width: 90px !important; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Continental Hotel Reservation Form</h2>
+<form>
+<table>
+    <tr><td>Name</td><td><input type="text" placeholder="Enter your name"></td></tr>
+    <tr><td>email</td><td><input type="text" value="info@continental.pk"></td></tr>
+    <tr><td>Mobile No</td><td><input type="text" placeholder="Enter your cell number"></td></tr>
+    <tr><td>Arrival Time</td><td><input type="text" placeholder="Enter your arrival time"></td></tr>
+    <tr><td>Departure</td><td><input type="text" class="small"> <input type="text" class="small"></td></tr>
+    <tr>
+        <td>Room Type</td>
+        <td>
+            <input type="radio" name="room"> Single
+            <input type="radio" name="room"> Double<br>
+            <input type="radio" name="room"> Presidential Suite
+        </td>
+    </tr>
+    <tr>
+        <td>Preferences</td>
+        <td>
+            <input type="checkbox"> Non-Smoking<br>
+            <input type="checkbox"> Internet<br>
+            <input type="checkbox"> Firm Mattress
+        </td>
+    </tr>
+    <tr>
+        <td>Mode of Payment</td>
+        <td>
+            <input type="checkbox"> Cash
+            <input type="checkbox"> Check<br>
+            <input type="checkbox"> Credit Card
+            <button type="button">Select Card</button>
+        </td>
+    </tr>
+    <tr><td colspan="2" style="text-align:center;"><button type="submit">Send Data</button></td></tr>
+</table>
+</form>
+</div>
+</body>
+</html>
